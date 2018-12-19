@@ -1,0 +1,242 @@
+ var song;
+ var video;
+
+function preload() {
+   song = loadSound("cumbia.mp3");
+ }
+
+function setup() {
+  createCanvas(1100, 1100);
+
+  plate = loadImage("images/plate.png");
+	avocado = loadImage("images/avocado.png");
+  rice = loadImage("images/rice.png");
+  chicharron = loadImage("images/chicharron.png");
+	beans = loadImage("images/beans.png");
+  egg = loadImage("images/egg.png");
+  sausage = loadImage("images/sausage.png");
+  steak = loadImage("images/steak.png");
+	platano = loadImage("images/platano.png");
+  arepa = loadImage("images/arepa.png");
+
+  video = createVideo(["vid.mp4"]);
+  video.hide();
+
+var bandejapaisa = true;
+var foodlist = false;
+
+function draw() {
+
+  if (foodlist){
+
+    image(video, 0, 0);
+    video.loop();
+
+    //left flag
+    fill(255, 227, 48);
+    rect(0, 0, 20, 1100);
+    noStroke();
+
+    fill(14, 101, 249);
+    rect(20, 20, 15, 1100);
+    noStroke();
+
+    fill(226, 0, 0);
+    rect(35, 35, 15, 1100);
+    noStroke();
+
+    //right flag
+
+    fill(255, 227, 48);
+    rect(1080, 0, 20, 1100);
+    noStroke();
+
+    fill(14, 101, 249);
+    rect(1065, 20, 15, 1100);
+    noStroke();
+
+    fill(226, 0, 0);
+    rect(1050, 35, 15, 1100);
+    noStroke();
+
+    //top flag
+
+    fill(255, 227, 48);
+    rect(0, 0, 1100, 20);
+    noStroke();
+
+    fill(14, 101, 249);
+    rect(20, 20, 1050, 15);
+    noStroke();
+
+    fill(226, 0, 0);
+    rect(50, 35, 1000, 15);
+    noStroke();
+
+    //bottom flag
+
+    fill(255, 227, 48);
+    rect(0, 1080, 1100, 20);
+    noStroke();
+
+    fill(14, 101, 249);
+    rect(20, 1065, 1050, 15);
+    noStroke();
+
+    fill(226, 0, 0);
+    rect(50, 1050, 1000, 15);
+    noStroke();
+
+    noStroke();
+    fill(255);
+    rect(250, 200, 600, 600, 25);
+
+    // yellow box text
+
+    fill(255, 227, 48);
+
+    rect(300, 275, 200, 50);
+    rect(300, 375, 200, 50);
+    rect(300, 475, 200, 50);
+    rect(300, 575, 200, 50);
+    rect(300, 675, 200, 50);
+
+    rect(600, 275, 200, 50);
+    rect(600, 375, 200, 50);
+    rect(600, 475, 200, 50);
+    rect(600, 575, 200, 50);
+
+    fill(0);
+    textSize(40);
+
+    text('avocado', 335, 315);
+    text('rice', 315, 415);
+    text('beans', 315, 515);
+    text('chicharron', 310, 615);
+    text('platano', 315, 715);
+
+    text('chorizo', 615, 315);
+    text('egg', 615, 415);
+    text('steak', 615, 515);
+    text('arepa', 615, 615);
+
+    // white box text
+    noStroke();
+    fill(255, 243, 198);
+    rect(300, 890, 450, 75, 25);
+
+    fill(0);
+    textSize(65);
+    text('¡bandeja paisa!', 300, 950);
+
+    }
+
+else if (bandejapaisa) {
+
+  song.stop();
+
+  background(255, 243, 198);
+
+  noStroke();
+  fill(255);
+  rect(250, 200, 600, 600, 25);
+
+  //left flag
+  fill(255, 227, 48);
+  rect(0, 0, 20, 1100);
+  noStroke();
+
+  fill(14, 101, 249);
+  rect(20, 20, 15, 1100);
+  noStroke();
+
+  fill(226, 0, 0);
+  rect(35, 35, 15, 1100);
+  noStroke();
+
+  //right flag
+
+  fill(255, 227, 48);
+  rect(1080, 0, 20, 1100);
+  noStroke();
+
+  fill(14, 101, 249);
+  rect(1065, 20, 15, 1100);
+  noStroke();
+
+  fill(226, 0, 0);
+  rect(1050, 35, 15, 1100);
+  noStroke();
+
+  //top flag
+
+  fill(255, 227, 48);
+  rect(0, 0, 1100, 20);
+  noStroke();
+
+  fill(14, 101, 249);
+  rect(20, 20, 1050, 15);
+  noStroke();
+
+  fill(226, 0, 0);
+  rect(50, 35, 1000, 15);
+  noStroke();
+
+  //bottom flag
+
+  fill(255, 227, 48);
+  rect(0, 1080, 1100, 20);
+  noStroke();
+
+  fill(14, 101, 249);
+  rect(20, 1065, 1050, 15);
+  noStroke();
+
+  fill(226, 0, 0);
+  rect(50, 1050, 1000, 15);
+  noStroke();
+
+  image(plate, 0, 0);
+  image(rice, 0, 0);
+  image(chicharron, 0, 0);
+  image(beans, 0, 0);
+  image(egg, 0, 0);
+  image(steak, 0, 0);
+  image(platano, 0, 0);
+  image(sausage, 0, 0);
+  image(arepa, 0, 0);
+  image(avocado, 0, 0);
+
+ // text
+
+  fill(0);
+  textSize(65);
+  text('¡bandeja paisa!', 300, 950);
+  }
+}
+
+function mousePressed() {
+  song.play();
+  foodlist = !foodlist;
+}
+
+function vidLoad() {
+  vid.play();
+}
+
+function toggleVid() {
+  if (foodlist) {
+    video.play();
+  } else {
+    video.stop();
+  }
+  foodlist = !foodlist;
+}
+
+function keyPressed() {
+  if (key == 'p') {
+    song.pause();
+  } else if (key == 'o') {
+    song.play();
+  }
+}
