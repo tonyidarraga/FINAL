@@ -1,30 +1,50 @@
-** "Untitled International Food Eating Contest" **
-In this p5 and HTML created game, plates of food appear faster and faster in front of the player.
+** "Bandeja Paisa!" **
+In this p5 created interactive display, the Colombian dish Bandeja Paisa is on the screen and once clicked, displays what is in the dish.
 
 ** Summary **
 Here, write a paragraph or two describing what you built for your final project and what was challenging.
-
 Include a discussion how it will be interactive or responsive to the environment.
+
+I made a little interactive piece where a dish of food is displayed, can be clicked and redirects you to what is in the dish
+in the form of a list. There is a video playing behind the text boxes and the audio can be controlled with keystrokes.
+I found the video addition pretty challenging but very worth it. It was much like adding sound in general.
 
 ** Component Parts **
 From what pieces did you build your project?
-
 Include what types of inputs/outputs/data it will use, and a diagram showing how all those pieces are connected.
+
+PNGs of food > Flag border made of rects > Set video in background of clicked redirection >
+Place white box, yellow boxes, text with ingredients > Add volume control
 
 ** Challenges **
 A brief discussion of what was hard, challenging, or unexpected about your project.
+
+Trying to click each image was incredibly difficult so I ended up dropping it. I tried to add the hover for the boxes
+as well and didn't manage to have the time/ability to do so.
 
 ** Timeline **
 What did you do in each of the past five weeks?
 
 -Week 1: Write proposal
 -Week 2: Make Assets
--Week 3: Begin setting up code for game
+-Week 3: Begin setting up code
 -Week 4: Finish coding/Debugging
 -Week 5: Present!
 
 ** Completed Work **
 Photos and videos of your completed final project!
 
+https://ibb.co/JdVJGLG
+https://ibb.co/ChZnqHM
+https://ibb.co/4Jjn4hw
+
 ** References and links **
 Tutorials, comments, videos, magazine articles - anything you found that helps you understand your project.
+
+https://discuss.atom.io/t/python-is-not-recognized-as-an-internal-or-external-command/38822/17
+https://www.youtube.com/watch?v=nJWV7X7df9w&t=0s&index=3&list=PLRqwX-V7Uu6bw0bVn4M63p8TMJf3OhGy8
+https://www.youtube.com/watch?v=Pn1g1wjxl_0
+https://forum.processing.org/two/discussion/23870/p5js-problem-with-asynchronous-video-loading-playing
+http://p5js.org/reference/#/p5/createVideo
+https://www.youtube.com/watch?v=lm8Y8TD4CTM
+https://www.youtube.com/watch?v=TaN5At5RWH8
